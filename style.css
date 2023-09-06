@@ -8,32 +8,42 @@ header {
     padding: 20px;
 }
 
-ul {
+
+
+nav {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    background-color: blueviolet;
     list-style-type: none;
     margin: 0;
     padding: 0; 
     overflow: hidden;
 }
 
-.menu {
+nav li {
     float: left;
-    background-color: blueviolet;
+    width: 20%;
 }
 
-.menu a {
-    display: block;
+nav li a {
     color: white;
-    text-align: center;
+    display: block;
     padding: 14px 16px;
+    text-align: center;
     text-decoration: none;
 }
 
-.menu a:hover {
+nav li a:hover {
     background-color:mediumpurple;
     color: black;
 }
 
-.menu a.active {
+nav li a.active {
     background-color: white;
     color: blueviolet;
 }
