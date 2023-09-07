@@ -58,7 +58,7 @@ aside {
     float: left;
     background-color: pink;
     position: sticky;
-    top: 7.75%;
+    top: 25%;
     overflow: hidden;
 }
 
@@ -94,6 +94,11 @@ footer {
     margin-top: 50px;
 }
 
+.heading {
+    margin-top: 50px;
+    display: inline-block;
+}
+
 /* profile page */
 
 #bio {
@@ -116,7 +121,7 @@ footer {
 #galleryheading {
     display: inline-block;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 70px;
 }
 
 #gallery {
@@ -142,12 +147,62 @@ footer {
     text-align: center;
 }
 
-/* blog page */
+/* faq page */
 
-#blogheading {
-    margin-top: 30px;
-    display: inline-block;
+.faq-container {
+    display: flex;   
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 5px;
+    margin: auto;
 }
+
+.faq-question {
+    background-color: cornflowerblue;
+    color: black;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 800px;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    margin: 0;
+}
+
+.faq-question:hover {
+    background-color: lightsteelblue;
+}
+
+.faq-question:after {
+    content: '\02795';
+    font-size: 13px;
+    color: black;
+    float: right;
+    margin-left: 5px;
+}
+
+.faq-answer {
+    margin: 0;
+    width: 804px;
+    padding: 18px;
+    background-color: lightgray;
+    display: none;
+    overflow: hidden;
+}
+
+.selected {
+    background-color: lightsteelblue;
+
+}
+
+.selected:after {
+    content: "\2796";
+}
+
+/* blog page */
 
 .blog {
     margin-top: 50px;
@@ -166,8 +221,9 @@ footer {
     font-size: 20px;
     border-radius: 5px;
     display: inline-block;
-    width: 80%;
+    width: 70%;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .blogbutton:hover {
