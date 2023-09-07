@@ -5,7 +5,7 @@ body {
 header {
     background-color: #f1f1f1;
     text-align: center;
-    padding: 20px;
+    padding: 50px;
 }
 
 
@@ -48,10 +48,35 @@ nav li a.active {
     color: blueviolet;
 }
 
+aside {
+    width: 17%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    background-color: pink;
+    height: 400px;
+}
+
+aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside ul a {
+    color: white;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+aside ul a:hover {
+    background-color: white;
+    color: pink;
+}
+
 footer {
     background-color: #f1f1f1;
-    position: fixed;
     bottom: 0;
-    width: 100%;
     padding: 20px;
 }
