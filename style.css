@@ -1,3 +1,5 @@
+
+
 body {
     margin: 0;
 }
@@ -33,7 +35,7 @@ nav li {
 nav li a {
     color: white;
     display: block;
-    padding: 14px 16px;
+    padding: 20px;
     text-align: center;
     text-decoration: none;
 }
@@ -54,7 +56,9 @@ aside {
     padding: 0;
     float: left;
     background-color: pink;
-    height: 400px;
+    position: sticky;
+    top: 7.75%;
+    overflow: hidden;
 }
 
 aside ul {
@@ -75,8 +79,58 @@ aside ul a:hover {
     color: pink;
 }
 
+main {
+    margin-left: 19%;
+    padding-left: 1%;
+    width: 80%
+}
+
 footer {
-    background-color: #f1f1f1;
+    background-color: blue;
     bottom: 0;
     padding: 20px;
+    margin-top: 50px;
+}
+
+/* profile page */
+
+#bio {
+    margin-top: 3.5%;
+    width: 81%;
+    display:inline-block
+}
+
+#bioportrait {
+    width: 20%;
+    float: left;
+}
+
+#biotext {
+    width: 78%;
+    float: left;
+    margin-left: 2%;   
+}
+
+#gallery {
+    width: 81%;
+    display: inline-block;
+    margin-top: 200px;
+}
+
+.gallery {
+    margin-right: 15px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 20%
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 2px;
+    text-align: center;
 }
