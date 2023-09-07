@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #f1f1f1;
+    background-color: blue;
     text-align: center;
     padding: 50px;
 }
@@ -38,6 +38,7 @@ nav li a {
     padding: 20px;
     text-align: center;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 nav li a:hover {
@@ -72,6 +73,7 @@ aside ul a {
     display: block;
     padding: 20px;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 aside ul a:hover {
@@ -111,10 +113,15 @@ footer {
     margin-left: 2%;   
 }
 
+#galleryheading {
+    display: inline-block;
+    width: 100%;
+    margin-top: 60px;
+}
+
 #gallery {
     width: 81%;
     display: inline-block;
-    margin-top: 200px;
 }
 
 .gallery {
@@ -133,4 +140,37 @@ footer {
 .desc {
     padding: 2px;
     text-align: center;
+}
+
+/* blog page */
+
+#blogheading {
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.blog {
+    margin-top: 50px;
+}
+
+.bloginfo {
+    margin-bottom: 5px;
+}
+
+.blogbutton {
+    background-color: cornflowerblue;
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: left;
+    font-size: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 80%;
+    transition: 0.3s;
+}
+
+.blogbutton:hover {
+    background-color: lightsteelblue;
+    color: black;
 }
