@@ -1,5 +1,3 @@
-
-
 var faq = document.getElementsByClassName("faq-question");
 var i;
 
