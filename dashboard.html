@@ -48,7 +48,7 @@
     </aside>
 
     <main>
-      <h1><span class=title-icon>&#9886;</span> Persoonlijk dashboard <span class=title-icon>&#9887;</span></h1>
+      <h1 id="dashboard-title"><span class=title-icon>&#9886;</span> Persoonlijk dashboard <span class=title-icon>&#9887;</span></h1>
         <section>
           <article>
             <h2>Resultaten</h2>
@@ -62,16 +62,16 @@
               </tr>
               <tr>
                 <td rowspan="4">1</td>
-                <td class="passed">2,5</td>
-                <td class="passed">&#10004; Program- & Career Orientation</td>
-                <td class="passed">&#10004; Assessment website</td>
-                <td class="passed">5,5</td>
+                <td>2,5</td>
+                <td>&#9744; Program- & Career Orientation</td>
+                <td>&#9744; Assessment website</td>
+                <td>...</td>
               </tr>
               <tr>
-                <td class="failed">5</td>
-                <td class="failed">&#10006; Computer Science Basics</td>
-                <td class="failed">&#10006; Tentamen</td>
-                <td class="failed">4</td>
+                <td>5</td>
+                <td>&#9744; Computer Science Basics</td>
+                <td>&#9744; Tentamen</td>
+                <td>...</td>
               </tr>
               <tr>
                 <td>5</td>
@@ -157,20 +157,44 @@
             </table>
           </article>
 
-          <article>
-            <h2>Studievoortgang</h2>
-            <table>
+          <article id="key">
+            <h3 id="key-title">Legenda</h3>
+            <table id="key-table">
               <tr>
-                <th>Behaalde CE's</th>
-                <th>NBSA</th>
-                <th>Behaalbare CE's</th>
+                <td class="passed">&#10004; Geslaagd</td>
               </tr>
               <tr>
-                <td>0</td>
-                <td>45</td>
-                <td>60</td>
+                <td class="failed">&#10006; Gezakt</td>
+              </tr>
+              <tr>
+                <td>&#9744; Onvoltooid</td>
               </tr>
             </table>
+            <h4 class="key-heading">Behaalde EC's</h4>
+            <div id="key-progress-bar">
+              <div id="key-progress-status">30 EC</div>
+            </div>
+            <h4 class="key-heading">NBSA (45 EC)</h4>
+            <div id="key-progress-bar">
+              <div id="key-nbsa"></div>
+            </div>
+            <h4 class="key-heading">Behaalbare EC's</h4>
+            <div id="key-progress-bar">
+              <div id="key-max"></div>
+            </div>
+            <h4 class="key-heading">Totaal # EC</h4>
+              <div id="key-total-ec">60 EC</div>
+            </div>
+          </article>
+
+          <article id="progress">
+            <h2>Studievoortgang</h2>
+            <div id="progress-bar">
+              <div id="progress-status">0 EC</div>
+              <div id="nbsa"></div>
+              <div id="max"></div>
+            </div>
+            <div id="total-ec">60 EC</div>
           </article>
         </section>        
     </main>
