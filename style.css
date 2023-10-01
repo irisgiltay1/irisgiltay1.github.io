@@ -102,6 +102,7 @@ footer {
     margin-top: 20px;
     padding: 20px;
     background-color: #907ed6;
+    text-align: center;
 }
 
 h1 {
@@ -143,6 +144,7 @@ p {
 
 #motivation {
     width: 50%;
+    display: inline-block;
     margin-top: 20px;
     padding: 10px 30px;
     background-color: #ceb7fb;
@@ -153,8 +155,48 @@ p {
     border-bottom: 5px solid #8270a6;
 }
 
+#socials {
+    width: 31%;
+    float: right;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+
+#socials div {
+    margin-top: 35px;
+    background-color: #e1d3fd7c;
+    border-radius: 40px;
+    font-size: 20px;
+}
+
+.fa {
+    width: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.fa-google {
+    background-color: #dd4b39;
+    color: #ffffff;
+}
+
+.fa-facebook {
+    background-color: #3B5998;
+    color: #ffffff;
+}
+
+.fa-snapchat-ghost {
+    background-color: #fffc00;
+    color: #ffffff;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+}
+
 #projects {
     width: 94%;
+    display: inline-block;
     margin-top: 40px;
     padding: 10px 30px;
     background-color: #e6ddf8;
@@ -165,36 +207,36 @@ p {
     border-bottom: 5px solid #b2acc0;
 }
 
-#project1 {
+#project-2021-website {
     width: 100%;
     display: inline-block;
 }
 
-#project1 img {
+#project-2021-website img {
     float: left;
     border-radius: 10px;
     border: 9px solid #8d7eaa;
 }
 
-#project1-desc {
+#project-2021-website-desc {
     float: left;
     margin-left: 30px;
 }
 
-#project2 {
+#project-2022-pico8 {
     width: 100%;
     display: inline-block;
     margin-top: 50px;
     margin-bottom: 30px;
 }
 
-#project2 img {
+#project-2022-pico8 img {
     float: right;
     border-radius: 10px;
     border: 9px solid #8d7eaa;
 }
 
-#project2-desc {
+#project-2022-pico8-desc {
     width: 50%;
     float: right;
     margin-right: 30px;
@@ -325,19 +367,28 @@ td.failed {
     text-shadow: none;
 }
 
+.key-heading {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
 #key-table {
     float: left;
+    margin-top: 10px;
     margin-left: 10px;
+    margin-bottom: 40px;
     border-collapse: collapse;
     border: 1px solid #000000;
     box-shadow: none;
 }
 
-.key-heading {
+.key-sub-heading {
     float: left;
-    margin-top: 40px;
     margin-left: 10px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     font-size: 16px;
 }
 
@@ -345,7 +396,6 @@ td.failed {
     width: 200px;
     height: 30px;
     float: left;
-    margin-top: 10px;
     margin-left: 10px;
     background-color: #e9e9e9;
     border: 1px solid #bcbcbc;
@@ -379,7 +429,6 @@ td.failed {
 #key-total-ec {
     width: 200px;
     float: left;
-    margin-top: 10px;
     margin-left: 10px;
     font-family: 'Verdana';
     line-height: 30px;
@@ -494,7 +543,7 @@ td.failed {
     margin-bottom: 40px;
     padding: 20px;
     background-color: #ceb7fb;
-    border-radius: 5px;
+    border-radius: 10px;
     color: #393939;
     font-size: 20px;
     font-weight: bold;
